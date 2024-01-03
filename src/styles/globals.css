@@ -1,0 +1,67 @@
+:root {
+  --primary-color: #BC6C25;
+  --secondary-color: #740000;
+
+  --text-color: #333;
+  --background-color: #fff;
+  --secondary-background-color: #ECE7DE;
+  --font-primary: 'Poppins', sans-serif;
+  --font-secondary: 'Poppins', sans-serif;
+
+  --base-spacing: 8px;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  font-family: var(--font-primary);
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 1.75em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-primary);
+  margin-top: 0;
+  margin-bottom: var(--base-spacing);
+}
+
+p {
+  font-family: var(--font-secondary);
+  font-size: 1em;
+  margin-top: 0;
+  margin-bottom: var(--base-spacing);
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
