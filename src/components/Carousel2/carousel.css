@@ -1,0 +1,96 @@
+.carousel {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.slide {
+    min-height: 100vh;
+    height: 100%;
+    transition: transform 1.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.slide img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    z-index: 10;
+    cursor: pointer;
+    background-color: #fff;
+    font-size: 18px;
+}
+
+.btn:active {
+
+    background-color: #333;
+    color: #fff;
+}
+
+.btn-prev {
+    top: 50%;
+    left: 2%;
+    transform: translateY(-50%);
+}
+
+.btn-next {
+    top: 50%;
+    right: 2%;
+    transform: translateY(-50%);
+}
+
+.carousel-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #333;
+    /* lub inny kolor, zależnie od preferencji */
+}
+
+.carousel-content h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    color: var(--text-color-light);
+}
+
+.carousel-content p {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    color: var(--text-color-light);
+}
+
+.carousel-button {
+    padding: 10px 30px;
+    background-color: var(--primary-color);
+    /* kolor tła */
+    color: var(--text-color-light);
+    /* kolor tekstu */
+    border: none;
+    border-width: 1px;
+    border-color: var(--primary-color);
+    border-radius: 1.25em;
+    cursor: pointer;
+}
+
+.carousel-button:hover {
+    background-color: var(--secondary-color);
+    /* ciemniejszy kolor tła przy najechaniu */
+}
